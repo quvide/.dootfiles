@@ -17,4 +17,4 @@ else
 end
 
 # https://news.ycombinator.com/item?id=11071754
-alias config "/usr/bin/git --git-dir=$HOME/.dootfiles/ --work-tree=$HOME"
+alias config "/usr/bin/git --git-dir=$HOME/.dootfiles/.git --work-tree=$HOME"
