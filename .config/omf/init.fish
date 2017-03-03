@@ -1,17 +1,20 @@
 # keychain
-eval (keychain --quiet --eval id_ed25519)
+if type -q keychain
+  eval (keychain --quiet --eval id_ed25519)
+end
 
 # $TERM madness
-set TERM xterm-256color
+set -xg TERM xterm-256color
+set -xg TERMINAL termite
 
 # $EDITOR preferences
 if type -q nvim
   alias vim nvim
-  set EDITOR nvim
+  set -xg EDITOR nvim
 else if type -q vim
-  set EDITOR vim
+  set -xg EDITOR vim
 else if type -q nano
-  set EDITOR nano
+  set -xg EDITOR nano
 else
   echo "Warning: no sensible editor present on this system"
 end
