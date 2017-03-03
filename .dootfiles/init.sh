@@ -6,7 +6,7 @@ echo "Created ~/.dootfiles/.git"
 git clone --bare git@github.com:quvide/.dootfiles.git $HOME/.dootfiles/.git
 echo "Cloned repository"
 
-git --git-dir=$HOME/.dootfiles/.git --work-dir=$HOME checkout
+git --git-dir=$HOME/.dootfiles/.git --work-tree=$HOME checkout
 echo "Checked out files to home directory"
 
 git --git-dir=$HOME/.dootfiles/.git config --local status.showUntrackedFiles no
