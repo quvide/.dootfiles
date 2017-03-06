@@ -21,3 +21,6 @@ end
 
 # https://news.ycombinator.com/item?id=11071754
 alias config "/usr/bin/git --git-dir=$HOME/.dootfiles/.git --work-tree=$HOME"
+
+# $PATH
+set -xg PATH $HOME/bin $HOME/.local/bin $PATH

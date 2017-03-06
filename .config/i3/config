@@ -125,4 +125,5 @@ bindsym XF86AudioPrev exec playerctl previous
 
 bar {
   status_command i3blocks
+  mode hide
 }
