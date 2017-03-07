@@ -41,10 +41,10 @@ interval=30
 command=date '+%Y-%m-%d %H:%M:%S'
 interval=1
 
-[mediaplayer]
-instance=spotify
-interval=5
-signal=10
+#[mediaplayer]
+#instance=spotify
+#interval=5
+#signal=10
 
 [temperature]
 label=TEMP
