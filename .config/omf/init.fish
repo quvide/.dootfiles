@@ -23,4 +23,4 @@ end
 alias config "/usr/bin/git --git-dir=$HOME/.dootfiles/.git --work-tree=$HOME"
 
 # $PATH
-set -xg PATH $HOME/bin $HOME/.local/bin $PATH
+set -xg PATH $HOME/bin $HOME/.local/bin $HOME/.gem/ruby/2.4.0/bin $PATH
